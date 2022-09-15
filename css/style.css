@@ -1,0 +1,352 @@
+/* Обнуляючий стиль */
+@import "reset.css";
+
+/* Підключаю шрифт */
+
+/* Варіант 1 Google fonts  ROBOTO*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+/* Варіант 2 вручну */
+/*!! tranforten, якщо немає конвертую з .ttf у формати woff woff2 */
+/* Конструкція font-face */
+/* Підключення шрифту Larsseit в типі накреслення Regular  */
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-regular.woff2") format("woff2"), url("../fonts/Larsseit-regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Підключення шрифту Larsseit в типі накреслення Medium */
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Medium.woff2") format("woff2"), url("../fonts/Larsseit-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Підключення шрифту Larsseit в типі накреслення Bold*/
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Підключення шрифту Lato в типі накреслення Regular */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Підключення шрифту Lato в типі накреслення Bold */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Підключення шрифту Lato в типі накреслення Black*/
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+body {
+	font-family: "Roboto";
+}
+
+h1{
+font-family: "Lato";
+	font-weight: 900;
+	font-size: 45px; 
+	color: rgb(232, 74, 208) ;
+}
+
+h2{
+		font-family: "Larsseit";
+		font-weight: 700;
+}
+
+h3{
+	font-family: "Larsseit";
+	font-weight: 500;
+}
+
+h4{
+	font-family: "Lato";
+	font-weight: 700;
+}
+
+/* Стилізую список Roboto font-weight: 100*/
+nav>ul>li>a{
+	font-family: "Roboto";
+	font-weight: 100;
+}
+
+/* Стилізую список Roboto font-weight: 700  */
+.list-food>li>.food {
+	font-family: "Roboto";
+	font-weight: 700;
+}
+
+/* Стилізую список Roboto font-weight: 100 */
+.cooking-list>li{
+		font-weight: 100;
+}
+
+/* Стилізую список Roboto font-weight: 900 */
+.components>li {
+	font-weight: 900;
+}
+
+span{
+	font-family: "Lato";
+	font-weight: 900;
+}
+
+.assecition.kitchen,
+.assecition{
+	font-weight: 700;
+}
+
+.ukrainian.item,
+.item{
+	font-family: "Lato"; 
+	font-weight: 900;
+}
+
+.best{
+	font-weight: 100;
+}
+#popular{
+	font-weight: 100;
+}
+
+.bold-larsseit{
+font-family: "Larsseit";
+font-weight: 700;
+font-size: 40px;
+}
+
+.medium-larsseit{
+	font-family: "Larsseit";
+		font-weight: 500;
+		font-size: 30px;
+}
+
+.regular-larsseit {
+	font-family: "Larsseit";
+	font-weight: 400;
+	font-size: 20px;
+}
+
+
+/* Селектори */
+/* 
+Звератюсь до всії обьєктів на строрінцію Селектор * */
+* {
+	 /* color: rgb(238, 150, 67); */
+}
+
+/* Селектори тегів */
+/*Звертаюсь до всіх тегів div на сторінці*/
+div {
+	color: rgb(103, 192, 162);
+}
+/*Звертаюсь до всіх тегів a на сторінці*/
+a {
+	color: rgb(103, 121, 192);
+	font-family: "Lato";
+	font-weight: 900;
+}
+/*Звертаюсь до всіх тегів H2 на сторінці*/
+h2{
+	color: darkgreen;
+	font-size: 30px;
+}
+
+h3{
+	color: blueviolet;
+	font-size: 25px;
+}
+h4{
+	color:red;
+}
+span{
+	color: crimson;
+}
+/* Приклад звернення до класу */
+/* Тут звертаюсь до класу .components */
+.components{
+	color: chartreuse;
+}
+/* Тут звертаюсь до класу .kitchen-text*/
+.kitchen-text{
+	color: coral;
+}
+
+/* Звертаюсь до всіх класів .list-item  у класі .menu-list. Через пробіл!!!! */
+.menu-list .list-item{
+	color: rgb(208, 100, 100);
+}
+
+/* Звертаюсь до всіх класів .food у класі .list-food Через пробіл!!!! */
+.list-food .food {
+	color: rgb(0, 179, 255);
+}
+/* Тут звертаюсь од всіх класів  .ukrainian та.item  одночасно. БЕЗ ПРОБІЛУ!!!, це рівнозначні класи */
+.ukrainian.item{
+	color: blue;
+}
+.item{color: darkorange;}
+
+/* !!Тут звернулась до батьківського обьєкту першого рівня вложеності, нічого не змінилось */
+.list-food {
+	color: darkmagenta;
+}
+
+
+#vareniki,
+#cholodez,
+#pampuchi,
+#drink,
+#classic{
+color: darkgreen;
+ }
+
+ /* !Звертаюсь до класу і нічого не виходить */
+.menu{
+	color: blue;
+}
+
+/* Тут звертаюсь оббєкту, який має  і клас .assecition і клас .kitchen одночасно*/
+/* Ці два класи є однозначними однакосими */
+.assecition.kitchen{
+	color: fuchsia;
+}
+
+
+/* Комбінації селекторів */
+/* Тут звертаюсь од всіх div з класом .text*/
+div.text {
+	/* color: rgb(235, 216, 0); */
+}
+
+/* Комбінація класів */
+/* тут застосовуєсо до стиль кольору і до .item, і до .ukrainian.item і до  .content*/
+.item,
+.ukrainian.item,
+.content{
+	color: rgb(117, 78, 131);
+}
+
+/* Розбираю каскадність або вложеність*/
+/* Звертаюсь до всіх тегів р , що вложені в клас  .block-content */
+/* Уточнення, бо звертаюсь до всіх селекторві тегів Р у класі  .block-content*/
+.block-content p{
+	color: crimson;
+}
+
+/* Звертаюсь до всіх обьєктів  .content у класі .block-content */
+.block-content .content{
+	color: rgb(122, 68, 148);
+}
+
+/* Звертаюсь до всіх обьєктів  .kitchenresept у класі .text */
+.text .kitchenresept{
+	color: rgb(235, 39, 127);
+}
+
+
+
+/* Усі об'єкти в середені 
+об'єктів з класом text */
+.text * {
+	/* color: rgb(43, 174, 14); */
+}
+
+/* Усі об'єкти в середені 
+об'єктів з класом text */
+.block-content * {
+	/* color: rgb(54, 114, 41); */
+}
+
+.text > p{
+	/* color: rgb(147, 100, 150); */
+}
+
+.text > .ukrainian {
+	color: rgb(37, 153, 161);
+}
+
+ /* Експеримент . Я уточнюю звертаюсь до всіх А у тегах li , що знаходяться у класі .list-food */
+ .list-food > li > a{
+	/* color: rgb(242, 242, 46); */
+ }
+
+
+ /* Преорітет селекторів */
+ /*Звертаюсь до всіх тегів div на сторінці ЯК ЗВЕРХУ БУЛО*/
+ div {
+ 	color: rgb(103, 192, 162);
+ }
+ /* Те що нижче має більший преорітет при РІВНИХ селекторах (селектори тегів) */
+div {
+	color: rgb(138, 149, 124);
+}
+
+/* Уточнення запиту, преорітетніших той запис, що більше уточнює */
+/* Тут ДДЯ ЕКСПЕрименту переписую код і задаю новий колір */
+.components{
+/* color: rgb(221, 139, 221); */
+}
+
+/* Тут тільки ОДИН такий ID це уточнення*/
+#bortsch {
+	color: rgb(167, 59, 59);
+}
+/* Тут комбінація ID селекторівб це теж уточнення кожного з них запис через кому, вони однакові по значенню, унікальні по назві */
+#vareniki,
+#cholodez,
+#pampuchi,
+#drink,
+#classic {
+	/* Флаг !important перебиває преорітет
+	!!Краще це не використовувати */
+	/* color: rgb(235, 59, 59) !important; */
+color: rgb(167, 59, 59);
+}
+
+/* Експеримент до другого правила */
+/* Блок Асоціяції смаку */
+/* Звертаюсь до всіх селекторів тегу P
+p{
+	 color: darkgoldenrod; 
+}
+/* Звертаюсь до класу .text
+.text {
+	color: darkviolet;
+}
+/* Звертаюсь до всіх p з класом  
+p.assecition{
+	color: darkorange;} 
+	Це саме більше уточненнія, самий більший преорітет, ЩЕ ЗВУЖЕНІШИЙ ПОШУК, бо я звертаюсь до всіх параграфів саме з класом assecition */
+	/* Цей запис ще преорітетніший ніж попередній бо звертаюсь до двох селекторів класів ОдНОЧАСНО одного селектору тега Р */
+/* .assecition.kitchen{
+	color: gold;
+} */
+
+
+
